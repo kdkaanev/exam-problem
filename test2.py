@@ -3,8 +3,8 @@ def average_treasure_gain(item_list):
     condition = ''
     for item in item_list:
         tresure_sum += len(item)
-    average = tresure_sum / len(item_list)
     if len(item_list) > 0:
+        average = tresure_sum / len(item_list)
         condition = f"Average treasure gain: {average:.2f} pirate credits."
     else:
         condition = "Failed treasure hunt."
@@ -37,7 +37,7 @@ def treasure(item_list):
                 y.reverse()
                 print(', '.join(y))
             else:
-                print(' '.join(item_list))
+                print(', '.join(item_list))
                 item_list.clear()
 
         command = input()
