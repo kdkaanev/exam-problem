@@ -6,7 +6,10 @@ patterns_emoji = r'([*][*][A-Z]{1}[a-z]{2,}[*][*])|([:][:][A-Z]{1}[a-z]{2,}[:][:
 
 patterns_number = r'\d'
 threshold = list(map(int, re.findall(patterns_number, text)))
-cool_threshold = math.prod(threshold)
+#cool_threshold = math.prod(threshold)
+cool_threshold = 1
+for i in range(len(threshold)):
+    cool_threshold *= threshold[i]
 print(f"Cool threshold: {cool_threshold}")
 
 emo_match = re.finditer(patterns_emoji, text)
