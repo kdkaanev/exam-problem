@@ -22,3 +22,4 @@ for emoji in emoji_list:
         cool += ord(emoji[i])
     if cool >= cool_threshold:
         print(emoji)
+        print('ok')
