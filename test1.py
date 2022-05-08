@@ -18,3 +18,4 @@ daily_plunder = int(input())
 expected_plunder = float(input())
 
 pirates(days, daily_plunder, expected_plunder)
+print()
